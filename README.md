@@ -10,5 +10,4 @@ This repository contains supplementary material (data and source code) to suppor
 It uses "ort_poly2.py" and "Bivariate_normal_distribution.py"
 3) ort_poly2.py - python code to carry our Polynomial chaos expansion
 4) "Bivariate_normal_distribution.py" - self-written code to implement bivariate normal distribution
-5) Figures - folder with plots for benchmarks ( see (3) )
-6) S1Dataset.txt - dataset from  Munkhammar et al. [2017]
+5) S1Dataset.txt - dataset from  Munkhammar et al. [2017]
