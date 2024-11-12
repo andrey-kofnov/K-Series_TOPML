@@ -34,9 +34,6 @@ Alternatively, you can add an optional easy_mode argument:
    ```bash
    python main_solutions.py 'Problem_Name' 'easy_mode'
 
-
-
-
 Here, easy_mode can be either True or False, where True samples from 80,000 repetitions and False samples from 1,000,000 repetitions.
 
 ### Example:
