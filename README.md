@@ -36,6 +36,33 @@ Alternatively, you can add an optional easy_mode argument:
 
 
 
+Here, easy_mode can be either True or False, where True samples from 80,000 repetitions and False samples from 1,000,000 repetitions.
+
+### Example:
+
+
+   ```bash
+   python main_solutions.py Random_Walk_2D False
+
+
+
+
+Available Benchmarks:
+
+Vasicek
+Random_Walk_1D
+Random_Walk_2D
+Taylor_rule
+Stuttering_P
+Differential_Drive_Robot
+Rimless_Wheel_Walker
+Turning_vehicle_model
+Turning_vehicle_model_Small_var
+PDP
+Robotic_Arm_2D (requires easy_mode)
+
+
+3. To work with **predefined distributions**, you can execute code from the file Distributions.py.
 
 
 
