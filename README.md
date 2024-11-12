@@ -22,10 +22,10 @@ This repository contains supplementary material (data and source code) to suppor
 
 ```bash
 pip install virtualenv
-virtualenv venv --python=python3.8
 ```
 
 ```bash
+virtualenv venv --python=python3.8
 source venv/bin/activate
 ```
 
