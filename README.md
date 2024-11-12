@@ -38,9 +38,9 @@ Here, easy_mode can be either True or False, where True samples from 80,000 repe
 
 ### Example:
 
+
    ```bash
    python main_solutions.py Random_Walk_2D False
-
 
 Available Benchmarks:
 
