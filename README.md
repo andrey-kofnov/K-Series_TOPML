@@ -18,7 +18,7 @@ This repository contains supplementary material (data and source code) to suppor
 
 ## Installation and Usage
 
-1. **Set up the environment**: Install required packages by running:
+1. **Set up the environment**: Download the entire repository and install all required packages by running:
 
 ```bash
 pip install virtualenv
