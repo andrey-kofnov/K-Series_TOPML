@@ -31,7 +31,9 @@ This repository contains supplementary material (data and source code) to suppor
 
 Alternatively, one can add an optional 'easy_mode' argument:
 
+   ```bash
    python main_solutions.py 'Problem_Name' 'easy_mode'
+   ```
 
 Here, easy_mode can be either True or False, where True samples from 80,000 repetitions and False samples from 1,000,000 repetitions.
 
@@ -44,19 +46,19 @@ Here, easy_mode can be either True or False, where True samples from 80,000 repe
 
 
 
-Available Benchmarks:
+### Available Benchmarks:
 
-Vasicek
-Random_Walk_1D
-Random_Walk_2D
-Taylor_rule
-Stuttering_P
-Differential_Drive_Robot
-Rimless_Wheel_Walker
-Turning_vehicle_model
-Turning_vehicle_model_Small_var
-PDP
-Robotic_Arm_2D (requires easy_mode)
+- **`Vasicek`**
+- **`Random_Walk_1D`**
+- **`Random_Walk_2D`**
+- **`Taylor_rule`**
+- **`Stuttering_P`**
+- **`Differential_Drive_Robot`**
+- **`Rimless_Wheel_Walker`**
+- **`Turning_vehicle_model`**
+- **`Turning_vehicle_model_Small_var`**
+- **`PDP`**
+- **`Robotic_Arm_2D`** 
 
 
 3. To work with **predefined distributions**, you can execute code from the file Distributions.py.
