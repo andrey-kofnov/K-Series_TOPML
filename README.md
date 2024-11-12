@@ -30,8 +30,6 @@ This repository contains supplementary material (data and source code) to suppor
    python main_solutions.py 'Problem_Name'
 
 Alternatively, you can add an optional easy_mode argument:
-
-
    ```bash
    python main_solutions.py 'Problem_Name' 'easy_mode'
 
