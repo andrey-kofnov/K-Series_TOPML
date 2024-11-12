@@ -266,7 +266,7 @@ plot_1d_dist(trunc_exp_grid, estimator, true, path, problem_params)
 ##################################################################################
 ########################   Electricity consumption data  #########################
 ##################################################################################
-import statsmodels.api as sm
+from scipy import stats
 
 
 data = pd.read_table("S1Dataset.txt", header=None)
@@ -313,8 +313,8 @@ size = 1000
 
 data_grid = np.linspace(min(work_list), max(work_list), size)
 
-kde = sm.nonparametric.KDEUnivariate(work_list)
-kde.fit()
+kde = stats.gaussian_kde(work_list)
+
 
 print('Estimates computation..')
 estimator = np.array([est(i) for i in data_grid])
@@ -343,6 +343,6 @@ plt.gca().yaxis.set_major_formatter(FormatStrFormatter('%.4f'))
 plt.plot(data_grid, estimator, linestyle = styles[1], linewidth = 5, color = 'red', label = "K-series, 7 moments")
 plt.hist(work_list, #bins = 30,
          density=True,  color = 'white',edgecolor='blue', linewidth=1.2, label = "Histogram")
-plt.plot(kde.support, kde.density, label = "Kernel density estimator")
+plt.plot(data_grid, kde(data_grid), label = "Kernel density estimator")
 plt.legend(prop = font1,  frameon=False)
 plt.savefig(path + "/K-series_real_data.jpeg")
