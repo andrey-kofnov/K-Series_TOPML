@@ -37,12 +37,12 @@ pip install -r requirements.txt
 2. **Run a Benchmark Problem**: Use the command line to run a specific problem:
 
 ```bash
-python main_solutions.py 'Problem_Name'
+python main_solutions.py <Problem_Name>
 ```
 Alternatively, one can add an optional 'easy_mode' argument:
 
 ```bash
-python main_solutions.py 'Problem_Name' 'easy_mode'
+python main_solutions.py <Problem_Name> [easy_mode]
 ```
 
 Here, easy_mode can be either True or False, where True samples from 80,000 repetitions and False samples from 1,000,000 repetitions.
