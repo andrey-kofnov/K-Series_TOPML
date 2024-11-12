@@ -56,8 +56,11 @@ def plot_2d_problem(grid, K_ser_est, my_path, problem_params):
     ax.set_ylabel('$Y$', fontsize=20, weight='bold')
     ax.zaxis.set_rotate_label(False)
     ax.set_zlabel('$\hat{f}$', fontsize=20, rotation=0, weight='bold')
-    for t in ax.zaxis.get_major_ticks(): t.label.set_fontsize(10)
-    for t in ax.zaxis.get_major_ticks(): t.label.set_weight('bold')
+    try:
+        for t in ax.zaxis.get_major_ticks(): t.label.set_fontsize(10)
+        for t in ax.zaxis.get_major_ticks(): t.label.set_weight('bold')
+    except:
+        pass
     plt.gca().yaxis.set_major_formatter(FormatStrFormatter('%.1f'))
     plt.gca().xaxis.set_major_formatter(FormatStrFormatter('%.1f'))
     plt.savefig(my_path + "/estimator_2D_" + problem_params['name'] + ".jpeg")
