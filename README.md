@@ -19,30 +19,30 @@ This repository contains supplementary material (data and source code) to suppor
 ## Installation and Usage
 
 1. **Set up the environment**: Install required packages by running:
-   ```bash
-   pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
 
 (Note: The code was written for Python 3.8.)
 
 2. **Run a Benchmark Problem**: Use the command line to run a specific problem:
 
-   ```bash
-   python main_solutions.py 'Problem_Name'
+```bash
+python main_solutions.py 'Problem_Name'
 
 Alternatively, one can add an optional 'easy_mode' argument:
 
-   ```bash
-   python main_solutions.py 'Problem_Name' 'easy_mode'
-   ```
+```bash
+python main_solutions.py 'Problem_Name' 'easy_mode'
+```
 
 Here, easy_mode can be either True or False, where True samples from 80,000 repetitions and False samples from 1,000,000 repetitions.
 
 ### Example:
 
 
-   ```bash
-   python main_solutions.py Random_Walk_2D False
-   ```
+```bash
+python main_solutions.py Random_Walk_2D False
+```
 
 
 
@@ -61,7 +61,7 @@ Here, easy_mode can be either True or False, where True samples from 80,000 repe
 - **`Robotic_Arm_2D`** 
 
 
-3. To work with **predefined distributions**, you can execute code from the file Distributions.py.
+3. To work with **predefined distributions**, you can execute code from the file **`Distributions.py`**.
 
 
 
