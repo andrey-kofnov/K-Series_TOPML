@@ -24,23 +24,24 @@ This repository contains supplementary material (data and source code) to suppor
 
 (Note: The code was written for Python 3.8.)
 
-Then, use the command line to run a specific problem:
+2. **Run a Benchmark Problem**: Use the command line to run a specific problem:
 
-arduino
-Copy code
+```bash
 python main_solutions.py 'Problem_Name'
-or
 
-arduino
-Copy code
+Alternatively, you can add an optional easy_mode argument:
+
+```bash
 python main_solutions.py 'Problem_Name' 'easy_mode'
-where easy_mode can be True or False, determining whether to sample from 80,000 repetitions or from 1,000,000 repetitions, respectively.
 
-Example:
+Here, easy_mode can be either True or False, where True samples from 80,000 repetitions and False samples from 1,000,000 repetitions.
 
-mathematica
-Copy code
+### Example:
+
+``bash
 python main_solutions.py Random_Walk_2D False
+
+
 Available Benchmarks:
 
 Vasicek
@@ -53,5 +54,7 @@ Rimless_Wheel_Walker
 Turning_vehicle_model
 Turning_vehicle_model_Small_var
 PDP
-Robotic_Arm_2D — requires easy_mode
-To work with predefined distributions, you can execute code from the file Distributions.py.
+Robotic_Arm_2D (requires easy_mode)
+
+
+3. To work with **predefined distributions**, you can execute code from the file Distributions.py.
