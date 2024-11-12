@@ -61,7 +61,7 @@ python main_solutions.py Random_Walk_2D False
 - **`Robotic_Arm_2D`** 
 
 
-3. To work with **predefined distributions**, you can execute code from the file **`Distributions.py`**.
+#### To work with **predefined distributions**, you can execute code from the file **`Distributions.py`**.
 
 
 
