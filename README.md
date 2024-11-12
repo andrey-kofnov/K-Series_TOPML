@@ -1,54 +1,57 @@
 # K-Series_TOPML
-This repository contains supplementary material (data and source code) to support the TOPML paper submission titled 'Moment-based Density Elicitation with Applications in Probabilistic Loops.'
+## Moment-based Density Elicitation with Applications in Probabilistic Loops
 
+This repository contains supplementary material (data and source code) to support the TOPML paper submission titled **"Moment-based Density Elicitation with Applications in Probabilistic Loops."**
 
-##############  DESCRIPTION ################
+---
 
+## Description of Files
 
-1) requirements.txt - requirements-file for python to execute "main.py"
-2) main_solutions.py - .py-file which runs the benchmarks from Table 1. 
-3) K_series_computation.py - .py-file with all mathematical logic described in the paper
-3) ort_poly2.py - python code to carry out Polynomial chaos expansion
-4) utils.py - contains utility functions and definitions of distributions
-5) S1Dataset.txt - dataset from  Munkhammar et al. [2017]
-6) Sampling.py - file is used by "main_solutions.py" to create samples for the benchmarks
-7) Problems.py - definition of the benchmarks and parameters to solve them
+- **`requirements.txt`**: Python requirements file for installing dependencies to execute `main.py`.
+- **`main_solutions.py`**: Script to run benchmarks as shown in Table 1 of the paper.
+- **`K_series_computation.py`**: Script containing all mathematical logic as described in the paper.
+- **`ort_poly2.py`**: Python code for Polynomial Chaos Expansion.
+- **`utils.py`**: Contains utility functions and definitions of distributions.
+- **`S1Dataset.txt`**: Dataset from Munkhammar et al. (2017).
+- **`Sampling.py`**: Script used by `main_solutions.py` to generate samples for benchmarks.
+- **`Problems.py`**: Definitions of benchmark problems and their parameters.
 
+## Installation and Usage
 
-To solve the benchmark problem one should install the environment which corresponds to the requirements from "requirements.txt" (program was written for the Python version 3.8). 
+1. **Set up the environment**: Install required packages by running:
+   ```bash
+   pip install -r requirements.txt
 
-Then type in command line:
+(Note: The code was written for Python 3.8.)
 
-python main_solutions.py 'Problem name'
+Then, use the command line to run a specific problem:
 
-or 
+arduino
+Copy code
+python main_solutions.py 'Problem_Name'
+or
 
-python main_solutions.py 'Problem name' 'easy_mode'
-
-where easy_mode takes two possible values (True or False) to sample from 80.000 repetitions or from 1.000.000 repetitions.
+arduino
+Copy code
+python main_solutions.py 'Problem_Name' 'easy_mode'
+where easy_mode can be True or False, determining whether to sample from 80,000 repetitions or from 1,000,000 repetitions, respectively.
 
 Example:
 
+mathematica
+Copy code
 python main_solutions.py Random_Walk_2D False
+Available Benchmarks:
 
-
-Full list of benchmarks:
-
-'''
-    1. Vasicek
-    2. Random_Walk_1D
-    3. Random_Walk_2D
-    4. Taylor_rule
-    5. Stuttering_P
-    6. Differential_Drive_Robot
-    7. Rimless_Wheel_Walker
-    8. Turning_vehicle_model
-    9. Turning_vehicle_model_Small_var
-    10. PDP
-    11. Robotic_Arm_2D           --- use easy_mode
-'''
-
-
-
-To deal with predefined distribtuions, one can use (execute) the code from the file 
-"Distributions.py".
+Vasicek
+Random_Walk_1D
+Random_Walk_2D
+Taylor_rule
+Stuttering_P
+Differential_Drive_Robot
+Rimless_Wheel_Walker
+Turning_vehicle_model
+Turning_vehicle_model_Small_var
+PDP
+Robotic_Arm_2D — requires easy_mode
+To work with predefined distributions, you can execute code from the file Distributions.py.
