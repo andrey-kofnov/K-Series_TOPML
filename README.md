@@ -19,6 +19,16 @@ This repository contains supplementary material (data and source code) to suppor
 ## Installation and Usage
 
 1. **Set up the environment**: Install required packages by running:
+
+```bash
+pip install virtualenv
+virtualenv venv --python=python3.8
+```
+
+```bash
+source venv/bin/activate
+```
+
 ```bash
 pip install -r requirements.txt
 ```
