@@ -21,14 +21,14 @@ This repository contains supplementary material (data and source code) to suppor
 1. **Set up the environment**: Install required packages by running:
 ```bash
 pip install -r requirements.txt
-
+```
 (Note: The code was written for Python 3.8.)
 
 2. **Run a Benchmark Problem**: Use the command line to run a specific problem:
 
 ```bash
 python main_solutions.py 'Problem_Name'
-
+```
 Alternatively, one can add an optional 'easy_mode' argument:
 
 ```bash
